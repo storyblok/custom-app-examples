@@ -1,6 +1,6 @@
 {
-    "name": "custom-apps-examples",
-    "version": "0.0.0",
+    "name": "custom-app-examples",
+    "version": "1.0.0",
     "description": "A collection of custom apps from the community",
     "main": "index.js",
     "scripts": {

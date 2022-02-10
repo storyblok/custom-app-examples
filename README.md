@@ -3,7 +3,7 @@
 
 # Custom Apps Examples
 
-A collection of custom apps for Storyblok created by the community. Read more about creating custom apps [here](https://www.storyblok.com/docs/plugins/custom-application)
+A collection of custom apps for Storyblok created by the community. Read more about creating custom apps [here](https://www.storyblok.com/docs/plugins/custom-application). Custom apps can be built by any partner. Read more about our partners and how to become one of them [here](https://www.storyblok.com/partners).
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC:collapse=true&collapseText=Table of Content) -->
 <details>
@@ -23,6 +23,7 @@ Each example contains a `README.md` with an explanation about the custom app.
 <!-- AUTO-GENERATED-CONTENT:START (EXAMPLE_TABLE)  -->
 | Example  | Author |
 |:-------|:------:|
+| **[Seo Data App ](https://github.com/storyblok/custom-app-examples/tree/main/seo-data-app)** <br/>  A simple app to edit SEO fields  |  [Zach Edwards](https://github.com/edwardz8) |
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
