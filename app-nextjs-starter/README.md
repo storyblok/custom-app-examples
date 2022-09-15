@@ -39,7 +39,7 @@ Finally, install the application to your space, open it from the sidebar and gra
 
 ![img.png](docs/img.png)
 
-## Next steps
+## See Also
 
 * Read more about [@storyblok/app-extension-auth](https://www.npmjs.com/package/@storyblok/app-extension-auth).
 * Add [@storyblok/mui](https://www.npmjs.com/package/@storyblok/mui)?
