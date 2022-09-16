@@ -1,0 +1,10 @@
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+}
