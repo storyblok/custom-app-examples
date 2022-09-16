@@ -72,10 +72,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.0.tgz#c1b983316307f8f55fee491942b5d244bd2036e2"
   integrity sha512-C/nw6OgQpEULWqs+wgMHXGvlJLguPRFFGqR2TAqWBerQ8J+Sg3z1ZTqwelkSi4FoqStGuZ2UdFHIDN1ySmR1xA==
 
-"@storyblok/app-extension-auth@0.0.7-alpha":
-  version "0.0.7-alpha"
-  resolved "https://registry.yarnpkg.com/@storyblok/app-extension-auth/-/app-extension-auth-0.0.7-alpha.tgz#a94c1ea1233d79a29f9bd251f3ad44650610c1dd"
-  integrity sha512-HzXU81jc2QYTnW/VItz5470AssfQNPevmlGqIx4Hnd+mqmtZf0g4BQbMm3DXLBH/83FuqJIbo1s9LFyTZvMr6g==
+"@storyblok/app-extension-auth@0.0.8-alpha":
+  version "0.0.8-alpha"
+  resolved "https://registry.yarnpkg.com/@storyblok/app-extension-auth/-/app-extension-auth-0.0.8-alpha.tgz#6786afd1057a7b7b5247f035a1cfce23e0a521df"
+  integrity sha512-KPNNyujZEVUGwe4//T+LEXC1VOITK2nqARTNqdeABahl+ddpS7fuG4tCclflUQzb5X6quo4vhEBfw2waqNGEBw==
   dependencies:
     grant "^5.4.21"
     jsonwebtoken "^8.5.1"
