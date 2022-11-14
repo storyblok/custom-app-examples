@@ -1,0 +1,21 @@
+{
+  "name": "app-extension-nuxtjs-starter",
+  "private": true,
+  "author": {
+    "name": "Alex Waweru",
+    "email": "alex.waweru@storyblok.com"
+  },
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@storyblok/app-extension-auth": "0.0.9-alpha",
+    "nuxt": "^2.12.2",
+    "vue-router": "^3.5.4"
+  },
+  "devDependencies": {
+    "sass": "^1.51.0",
+    "sass-loader": "^10.2.1"
+  }
+}
