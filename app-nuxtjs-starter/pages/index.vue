@@ -45,7 +45,12 @@ export default {
     const {redirect, query} = context
 
     if (!isAppSessionQuery(query)) {
-      return initAuthFlow
+      return {
+        redirect: {
+          permanent: false,
+          destination: `${endpointPrefix}/storyblok`,
+        },
+      }
     }
 
     const sessionStore = sessionCookieStore(authHandlerParams)(context)
