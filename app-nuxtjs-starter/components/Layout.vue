@@ -19,7 +19,7 @@
         </code>.
       </div>
     </header>
-    <main className='main' >{{children}}</main>
+    <main class='main' >{{children}}</main>
   </div>
 </template>
 
