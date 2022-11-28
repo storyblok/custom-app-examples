@@ -21,7 +21,7 @@ Note down your assigned URL; this will be your `baseUrl` for the application.
 Create an app in Storyblok's Partner Portal and configure the following properties with the values derived from your `baseUrl`:
 
 * **URL to your app**: `{baseUrl}`
-* **OAuth2 callback URL**: `{baseUrl}/api/authenticate`
+* **OAuth2 callback URL**: `{baseUrl}/api/authenticate/storyblok/callback`
 
 Rename the file `.env.local.example` to `.env.local`. Open the file and set the environmental variables:
 
