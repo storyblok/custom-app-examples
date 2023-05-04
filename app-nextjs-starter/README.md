@@ -42,5 +42,5 @@ Finally, install the application to your space, open it from the sidebar and gra
 ## See Also
 
 * Read more about [@storyblok/app-extension-auth](https://www.npmjs.com/package/@storyblok/app-extension-auth).
-* Add [@storyblok/mui](https://www.npmjs.com/package/@storyblok/mui)?
+* Use [MUI](https://mui.com/) with [@storyblok/mui](https://www.npmjs.com/package/@storyblok/mui)
 * Add linting with [eslint](https://www.npmjs.com/package/eslint).

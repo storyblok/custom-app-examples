@@ -9,7 +9,9 @@ export const authHandlerParams: AuthHandlerParams = {
   successCallback: '/',
   errorCallback: '/401',
   endpointPrefix,
-  // Increase scope if needed
-  scope: ['read_content'],
-  // scope: ['read_content', 'write_content'],
+  // Increase the scope if needed
+  scope: [
+    'read_content',
+    // 'write_content',
+  ],
 }

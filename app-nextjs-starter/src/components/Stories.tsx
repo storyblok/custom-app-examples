@@ -7,7 +7,7 @@ export const Stories: FunctionComponent<{
 }> = (props) => (
   <ul className={styles.list}>
     {props.stories.map(story => (
-      <li className={styles.listItem}>
+      <li key={story.id} className={styles.listItem}>
         {story.is_folder ? '📁' : '📄'} <strong>{story.name}</strong>
       </li>
     ))}
