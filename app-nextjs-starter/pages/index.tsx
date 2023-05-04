@@ -4,6 +4,7 @@ import {authHandlerParams, endpointPrefix} from "@src/auth";
 import {Layout} from "@src/components/Layout";
 import {useEffect, useState} from "react";
 import {Stories} from "@src/components/Stories";
+import {useEmbeddedPage} from "@src/useEmbeddedPage";
 
 type PageProps = {
   userName: string
@@ -27,6 +28,8 @@ const fetchStories = (spaceId: number, userId: number): Promise<any[]> => (
 
 const Home: NextPage<PageProps> = (props) => {
   const [stories, setStories] = useState<any[]>([])
+
+  useEmbeddedPage()
 
   useEffect(() => {
     fetchStories(props.spaceId, props.userId)
