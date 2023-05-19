@@ -4,6 +4,7 @@ import {authHandlerParams, endpointPrefix} from "@src/auth";
 import {Layout} from "@src/components/Layout";
 import {useEffect, useState} from "react";
 import {Stories} from "@src/components/Stories";
+import {isStories, Story} from "@src/Story";
 
 type PageProps = {
   userName: string
@@ -12,21 +13,18 @@ type PageProps = {
   userId: number
 }
 
-const fetchStories = (spaceId: number, userId: number): Promise<any[]> => (
+const fetchStories = (spaceId: number, userId: number): Promise<Story[]> => (
   fetch(`api/stories?spaceId=${spaceId}&userId=${userId}`)
-    .then(res => res.json())
-    .then(stories => {
-      console.log('Fetched stories', stories)
-      return stories
-    })
+    .then((res) => res.json())
+    .then((res) => isStories(res) ? res : [])
     .catch(error => {
-      console.error(error)
+      console.error('Failed to fetch stories', error)
       return []
     })
 )
 
 const Home: NextPage<PageProps> = (props) => {
-  const [stories, setStories] = useState<any[]>([])
+  const [stories, setStories] = useState<Story[]>([])
 
   useEffect(() => {
     fetchStories(props.spaceId, props.userId)
