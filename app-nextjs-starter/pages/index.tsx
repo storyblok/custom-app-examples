@@ -1,5 +1,5 @@
 import {GetServerSideProps, NextPage} from "next";
-import {isAppSessionQuery, sessionCookieStore} from "@storyblok/app-extension-auth";
+import {isAppSessionQuery, Region, sessionCookieStore} from "@storyblok/app-extension-auth";
 import {authHandlerParams, endpointPrefix} from "@src/auth";
 import {Layout} from "@src/components/Layout";
 import {useEffect, useState} from "react";
@@ -8,6 +8,7 @@ import {isStories, Story} from "@src/Story";
 
 type PageProps = {
   userName: string
+  region: Region
   spaceName: string
   spaceId: number
   userId: number
@@ -35,6 +36,9 @@ const Home: NextPage<PageProps> = (props) => {
     <Layout>
       <p>
         Hello {props.userName} 👋
+      </p>
+      <p>
+        This is a <em>{props.region}</em> space.
       </p>
       <p>
         These are the first {stories.length} stories on the {props.spaceName} space:
@@ -70,6 +74,7 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async (context)
       userName: appSession.userName,
       spaceName: appSession.spaceName,
       spaceId: appSession.spaceId,
+      region: appSession.region,
       userId: appSession.userId,
     }
   }
