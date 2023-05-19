@@ -37,7 +37,7 @@ const Home: NextPage<PageProps> = (props) => {
         Hello {props.userName} 👋
       </p>
       <p>
-        There are the first {stories.length} stories on the {props.spaceName} space:
+        These are the first {stories.length} stories on the {props.spaceName} space:
       </p>
       <Stories stories={stories}/>
     </Layout>
