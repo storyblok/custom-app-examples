@@ -5,6 +5,9 @@
 
 A collection of custom apps for Storyblok created by the community. Read more about creating custom apps [here](https://www.storyblok.com/docs/plugins/custom-application). Custom apps can be built by any partner. Read more about our partners and how to become one of them [here](https://www.storyblok.com/partners).
 
+- [Next.js starter](./app-nextjs-starter)
+- [Nuxt.js starter](./app-nuxtjs-3-starter) (Work in progress)
+
 <!-- AUTO-GENERATED-CONTENT:START (TOC:collapse=true&collapseText=Table of Content) -->
 <details>
 <summary>Table of Content</summary>
