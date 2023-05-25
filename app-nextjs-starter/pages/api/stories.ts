@@ -1,8 +1,32 @@
 import {NextApiHandler} from "next";
-import {AppSessionQuery, AppSessionStore, isAppSessionQuery, sessionCookieStore} from "@storyblok/app-extension-auth";
+import {isAppSessionQuery, Region, sessionCookieStore} from "@storyblok/app-extension-auth";
 import {authHandlerParams} from "@src/auth";
+import StoryblokClient from "storyblok-js-client";
+import {isStories, Story} from "@src/Story";
 
-const handle: NextApiHandler = async (req, res) => {
+type StoriesResponse = {
+  stories: Story[]
+}
+
+const isStoriesResponse = (data: unknown): data is StoriesResponse =>
+  typeof data === 'object' &&
+  'stories' in data && isStories(data.stories)
+
+const fetchStories = (accessToken: string, region: Region, spaceId: number): Promise<Story[] | Error> =>
+  new StoryblokClient({
+    oauthToken: `Bearer ${accessToken}`,
+    region,
+  }).get(
+    `spaces/${spaceId.toString(10)}/stories`
+  ).then(res =>
+    res.data as unknown
+  ).then(data =>
+    isStoriesResponse(data) ? data.stories : undefined
+  ).catch((error) =>
+    error
+  )
+
+const handle: NextApiHandler<Story[]> = async (req, res) => {
   try {
 
 
@@ -20,28 +44,24 @@ const handle: NextApiHandler = async (req, res) => {
       res.status(401).end()
       return
     }
-    const stories = await fetch(`https://api.storyblok.com/v1/spaces/${appSession.spaceId}/stories`, {
-      headers: {
-        Authorization: `Bearer ${appSession.accessToken}`
-      },
-    })
-      .then(res => {
-        if (!res.ok) {
-          return undefined
-        }
-        return res.json()
-      })
-      .then(body =>
-        body.stories
-      )
-      .catch((error) => {
-        console.error(error)
-        return undefined
-      })
+
+    const {accessToken, region, spaceId} = appSession
+
+    const stories = await fetchStories(accessToken, region, spaceId)
+
+    if (stories instanceof Error) {
+      console.error(stories)
+      res.status(500).end()
+      return
+    }
+
     res.json(stories)
+    return
   } catch (error) {
     // Should not happen
     res.status(500).end()
   }
 }
+
+
 export default handle

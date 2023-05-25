@@ -1,9 +1,9 @@
 import {FunctionComponent} from "react";
-import {inspect} from "util";
 import styles from './Stories.module.css'
+import {Story} from "@src/Story";
 
 export const Stories: FunctionComponent<{
-  stories: any[]
+  stories: Story[]
 }> = (props) => (
   <ul className={styles.list}>
     {props.stories.map(story => (
