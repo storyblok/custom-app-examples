@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "check:types": "tsc --noEmit",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint ."
   },
   "dependencies": {
     "@storyblok/app-extension-auth": "1.0.0-alpha.0",

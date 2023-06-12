@@ -14,5 +14,6 @@
         "ecmaVersion": "latest",
         "parser": "@typescript-eslint/parser",
         "sourceType": "module"
-    }
+    },
+    "ignorePatterns": [".nuxt/*, node_modules/*"]
 }
