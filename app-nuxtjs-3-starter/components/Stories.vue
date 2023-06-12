@@ -5,13 +5,22 @@ defineProps<{
 }>()
 </script>
 <template>
-  <ul>
-    <li
-      v-for="story in stories"
-      :key="story.id"
-    >
-      {{ story.is_folder ? '📁' : '📄' }} <strong>{{ story.name }}</strong>
-    </li>
-  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-for="story in stories"
+        :key="story.id"
+      >
+        <td>
+          {{ story.is_folder ? '📁' : '📄' }} <strong>{{ story.name }}</strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 <style></style>

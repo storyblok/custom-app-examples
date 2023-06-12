@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {navigateTo, useFetch, useRoute} from '#app'
+import { navigateTo, useFetch, useRoute } from '#app'
 import { initOauthFlowUrl } from '~/src/endpointPrefix'
 
 const route = useRoute()

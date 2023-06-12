@@ -2,10 +2,10 @@ import {
   isAppSessionQuery,
   sessionCookieStore,
 } from '@storyblok/app-extension-auth'
+import { H3Event } from 'h3'
 import { authHandlerParams } from '~/src/auth'
 import { fetchStories } from '~/src/server/fetchStories'
 import { Story } from '~/src/Story'
-import { H3Event } from 'h3'
 
 export default defineEventHandler<Story[]>(async (event) => {
   const query = getQuery(event)
