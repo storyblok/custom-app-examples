@@ -7,7 +7,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "check:types": "tsc --noEmit",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@storyblok/app-extension-auth": "1.0.0-alpha.0",
@@ -15,9 +16,15 @@
     "storyblok-js-client": "^5.10.5"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "^18",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "nuxt": "^3.4.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   },
   "packageManager": "yarn@3.2.4"
 }

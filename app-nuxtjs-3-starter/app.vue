@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import {navigateTo, useFetch, useRoute} from '#app'
+import { navigateTo, useFetch, useRoute } from '#app'
 import { initOauthFlowUrl } from '~/src/endpointPrefix'
+import StoryTable from '~/components/StoryTable.vue'
 
 const route = useRoute()
 const { spaceId, userId } = route.query
@@ -20,6 +21,6 @@ const result = await useFetch(() => `/api/stories`, {
     <p>
       Hello, these are the first {{ result.data.length }} stories on this space:
     </p>
-    <Stories :stories="result.data.value" />
+    <StoryTable :stories="result.data.value" />
   </div>
 </template>
