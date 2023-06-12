@@ -17,10 +17,25 @@ const result = await useFetch(() => `/api/stories`, {
 })
 </script>
 <template>
-  <div v-if="!result.pending.value">
-    <p>
-      Hello, these are the first {{ result.data.length }} stories on this space:
-    </p>
-    <StoryTable :stories="result.data.value" />
-  </div>
+  <NuxtLayout>
+    <main v-if="!result.pending.value && result.data.value">
+      <span class="text-small">
+        Hello, these are last {{ result.data.value.length }} updated stories on
+        this space:
+      </span>
+      <StoryTable
+        class="story-table"
+        :stories="result.data.value"
+      />
+    </main>
+  </NuxtLayout>
 </template>
+
+<style scoped>
+.text-small {
+  color: #8d919f;
+}
+.story-table {
+  padding-top: 22px;
+}
+</style>
