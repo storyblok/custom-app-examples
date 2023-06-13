@@ -52,12 +52,6 @@ Run your local development by executing:
 ```bash 
 # yarn
 yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
 ```
 
 
