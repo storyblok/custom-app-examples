@@ -1,5 +1,10 @@
 <template>
-  <div class="layout"><Header /> <slot /></div>
+  <div class="layout">
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </div>
 </template>
 
 <style>

@@ -1,46 +1,5 @@
-<script setup lang="ts">
-import { navigateTo, useFetch, useRoute } from '#app'
-import { initOauthFlowUrl } from '~/src/endpointPrefix'
-import StoryTable from '~/components/StoryTable.vue'
-
-const route = useRoute()
-const { spaceId, userId } = route.query
-
-if (!spaceId || !userId) {
-  navigateTo(initOauthFlowUrl)
-}
-const result = await useFetch(() => `/api/stories`, {
-  params: {
-    spaceId,
-    userId,
-  },
-})
-</script>
-
 <template>
   <NuxtLayout>
-    <main
-      v-if="!result.pending.value && result.data.value"
-      class="app"
-    >
-      <span class="app__text">
-        Here is a list of the last {{ result.data.value.length }} updated
-        stories on this space:
-      </span>
-      <StoryTable
-        class="app_story-table"
-        :stories="result.data.value"
-      />
-    </main>
+    <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style scoped>
-.app__text {
-  color: #8d919f;
-}
-
-.app_story-table {
-  margin-top: 22px;
-}
-</style>
