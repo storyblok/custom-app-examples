@@ -19,7 +19,10 @@ const result = await useFetch(() => `/api/stories`, {
 </script>
 
 <template>
-  <div v-if="!result.pending.value && result.data.value">
+  <div
+    v-if="!result.pending.value && result.data.value"
+    class="app"
+  >
     <span class="app__text">
       Here is a list of the last {{ result.data.value.length }} updated stories
       on this space:
@@ -32,6 +35,10 @@ const result = await useFetch(() => `/api/stories`, {
 </template>
 
 <style scoped>
+.app {
+  flex: 1;
+}
+
 .app__text {
   color: #8d919f;
 }
