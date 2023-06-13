@@ -67,8 +67,6 @@ yarn build
 # npm
 npm run build
 
-# pnpm
-pnpm run build
 ```
 2. Set the environment variables.
 
