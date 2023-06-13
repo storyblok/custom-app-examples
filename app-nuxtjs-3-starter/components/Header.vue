@@ -2,8 +2,8 @@
   <header class="header">
     <StoryblokIcon />
     <div class="header__titles">
-      <h1>Nuxt Custom Application</h1>
-      <h2>Subtitle</h2>
+      <h1 class="header__title">Nuxt Custom Application</h1>
+      <h2 class="header__subtitle">Subtitle</h2>
     </div>
   </header>
 </template>
@@ -22,7 +22,7 @@
   flex-direction: column;
 }
 
-h1 {
+.header__title {
   color: #1b243f;
   font-size: 1.625rem;
   font-weight: 700;
@@ -32,7 +32,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+.header__subtitle {
   margin: 0;
   font-weight: 400;
   letter-spacing: 0.00714em;
