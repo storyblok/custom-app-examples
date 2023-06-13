@@ -21,7 +21,9 @@ export const fetchStories = (
     oauthToken: `Bearer ${accessToken}`,
     region,
   })
-    .get(`spaces/${spaceId.toString(10)}/stories`)
+    .get(`spaces/${spaceId.toString(10)}/stories`, {
+      sort_by: 'updated_at:desc',
+    })
     .then((res) => res.data as unknown)
     .then((data) => (isStoriesResponse(data) ? data.stories : undefined))
     .catch((error) => error)
