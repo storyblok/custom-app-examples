@@ -40,7 +40,7 @@ For creating a new custom application you can either follow [this article](https
 1. Navigate to `Partner Portal -> Extensions`.
 2. Create new Sidebar Application.
 3. Open the application settings.
-4. Navigate to `OAuth 2.0 adn Pages tab.
+4. Navigate to the _OAuth 2.0 and Pages tab_.
 5. Set up Production/Preview mode.
     1. `Index to your page` should point to your ngrok URL (e.g.: `https://<YOUR-HOST-NAME>.ngrok.io`).
     2. `Redirection endpoint` points to the callback endpoint (e.g.: `https://<YOUR-HOST-NAME>.ngrok.io/api/authenticate/callback`).
