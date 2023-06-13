@@ -22,8 +22,8 @@ const result = await useFetch(() => `/api/stories`, {
     <main class="app">
       <template v-if="!result.pending.value && result.data.value">
         <span class="app__text">
-          Hello, these are last {{ result.data.value.length }} updated stories
-          on this space:
+          Here is a list of the last {{ result.data.value.length }} updated
+          stories on this space:
         </span>
         <StoryTable
           class="app_story-table"
