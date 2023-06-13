@@ -29,7 +29,7 @@ const formattedDate = (date: string) => {
     <thead>
       <tr>
         <th class="table__head-cell">Name</th>
-        <th class="table__head-cell">Author</th>
+        <th class="table__head-cell table__head-cell--author">Author</th>
         <th class="table__head-cell">Last update</th>
       </tr>
     </thead>
@@ -48,7 +48,9 @@ const formattedDate = (date: string) => {
             <span>{{ story.slug }}</span>
           </div>
         </td>
-        <td class="table__data-cell">{{ story.last_author.friendly_name }}</td>
+        <td class="table__data-cell table__data-cell--author">
+          {{ story.last_author.friendly_name }}
+        </td>
         <td class="table__data-cell">
           {{ formattedDate(story.updated_at) }}
         </td>
@@ -99,5 +101,12 @@ const formattedDate = (date: string) => {
 .table__story-name {
   color: #1b243f;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .table__data-cell--author,
+  .table__head-cell--author {
+    display: none;
+  }
 }
 </style>
