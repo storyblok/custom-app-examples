@@ -1,10 +1,9 @@
 <template>
-  <div class="container"><Header /> <slot /></div>
+  <div class="layout"><Header /> <slot /></div>
 </template>
-<script setup></script>
 
 <style>
-.container {
+.layout {
   padding: 45px 80px;
 }
 </style>

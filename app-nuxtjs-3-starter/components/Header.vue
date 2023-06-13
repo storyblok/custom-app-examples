@@ -1,18 +1,15 @@
 <template>
-  <header>
+  <header class="header">
     <StoryblokIcon />
-    <div class="titles">
+    <div class="header__titles">
       <h1>Nuxt Custom Application</h1>
       <h2>Subtitle</h2>
     </div>
   </header>
 </template>
 
-<script setup>
-import StoryblokIcon from '~/components/StoryblokIcon.vue'
-</script>
 <style scoped>
-header {
+.header {
   display: flex;
   flex-direction: row;
   gap: 10px 15px;
@@ -20,7 +17,7 @@ header {
   align-items: flex-start;
 }
 
-.titles {
+.header__titles {
   display: flex;
   flex-direction: column;
 }

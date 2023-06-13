@@ -16,26 +16,30 @@ const result = await useFetch(() => `/api/stories`, {
   },
 })
 </script>
+
 <template>
   <NuxtLayout>
-    <main v-if="!result.pending.value && result.data.value">
-      <span class="text-small">
-        Hello, these are last {{ result.data.value.length }} updated stories on
-        this space:
-      </span>
-      <StoryTable
-        class="story-table"
-        :stories="result.data.value"
-      />
+    <main class="app">
+      <template v-if="!result.pending.value && result.data.value">
+        <span class="app__text">
+          Hello, these are last {{ result.data.value.length }} updated stories
+          on this space:
+        </span>
+        <StoryTable
+          class="app_story-table"
+          :stories="result.data.value"
+        />
+      </template>
     </main>
   </NuxtLayout>
 </template>
 
 <style scoped>
-.text-small {
+.app__text {
   color: #8d919f;
 }
-.story-table {
-  padding-top: 22px;
+
+.app_story-table {
+  margin-top: 22px;
 }
 </style>
