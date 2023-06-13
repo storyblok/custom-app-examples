@@ -19,4 +19,10 @@
   flex: 1;
   display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    padding: 110px 5px 0 5px;
+  }
+}
 </style>
