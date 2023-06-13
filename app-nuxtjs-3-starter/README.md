@@ -75,9 +75,4 @@ npm run build
 # yarn
 yarn start
 
-# npm
-npm run start
-
-# pnpm
-pnpm run start
 ```
