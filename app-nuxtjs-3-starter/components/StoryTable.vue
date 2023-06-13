@@ -20,7 +20,8 @@ defineProps<{
         :key="story.id"
       >
         <td class="table__table-data table__table-data-name-cell">
-          {{ story.is_folder ? '📁' : '📄' }}
+          <template v-if="story.is_folder"><FolderIcon /></template>
+          <template v-else><StoryIcon /></template>
 
           <div class="table__table-data-name">
             <strong class="strong">{{ story.name }}</strong>
