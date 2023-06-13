@@ -9,12 +9,6 @@
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 ### Environment Variables
 
@@ -29,7 +23,7 @@ First, copy the `.env.example` file and rename to `.env`.
    inside the `.env` file to your tunnel URL, using HTTPS. For example, https://myngroksubdomain.ngrok.io.
 
 ```bash
-ngrok http --region=eu --hostname=<YOUR-HOST-NAME>.ngrok.io 3000 # define region and your hostname domain and use the port your application is running on
+ngrok http --hostname=myngroksubdomain.ngrok.io 3000 # define your hostname domain and use the port your application is running on
 ```
 
 ### Storyblok Custom Application
@@ -54,8 +48,6 @@ Run your local development by executing:
 yarn dev
 ```
 
-
-
 ## Production
 See previous sections from Local Development, to see how to set up external dependencies.
 
@@ -63,10 +55,6 @@ See previous sections from Local Development, to see how to set up external depe
 ```bash
 # yarn
 yarn build
-
-# npm
-npm run build
-
 ```
 2. Set the environment variables.
 
@@ -74,5 +62,4 @@ npm run build
 ```bash
 # yarn
 yarn start
-
 ```
