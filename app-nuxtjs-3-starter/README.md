@@ -50,7 +50,14 @@ For creating a new custom application you can either follow [this article](https
 Run your local development by executing:
 
 ```bash 
-yarn run dev
+# yarn
+yarn dev
+
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
 ```
 
 
@@ -60,11 +67,25 @@ See previous sections from Local Development, to see how to set up external depe
 
 1. Build minified bundle by running:
 ```bash
+# yarn
 yarn build
+
+# npm
+npm run build
+
+# pnpm
+pnpm run build
 ```
 2. Set the environment variables.
 
 3. Afterwards start a Nuxt production server:
 ```bash
+# yarn
 yarn start
+
+# npm
+npm run start
+
+# pnpm
+pnpm run start
 ```
