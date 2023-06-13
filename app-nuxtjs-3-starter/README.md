@@ -26,7 +26,7 @@ First, copy the `.env.example` file and rename to `.env`.
 1. Create a tunnel for you application using [ngrok](https://ngrok.com/). To create a specific domain tunnel as listed below, you need to set up an account.
 
 2. Adjust `BASE_URL`
-   inside the `.env` file to your tunnel domain (e.g.: https://<YOUR-HOST-NAME>.ngrok.io).
+   inside the `.env` file to your tunnel URL, using HTTPS. For example, https://myngroksubdomain.ngrok.io.
 
 ```bash
 ngrok http --region=eu --hostname=<YOUR-HOST-NAME>.ngrok.io 3000 # define region and your hostname domain and use the port your application is running on
