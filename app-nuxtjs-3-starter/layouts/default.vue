@@ -7,8 +7,4 @@
 .container {
   padding: 45px 80px;
 }
-
-.main {
-  padding-top: 45px;
-}
 </style>

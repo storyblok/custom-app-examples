@@ -4,6 +4,24 @@ import { Story } from '~/src/Story'
 defineProps<{
   stories: Story[]
 }>()
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-US', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  })
+
+const formatTime = (date: Date) =>
+  date.toLocaleTimeString('en-US', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+  })
+const formattedDate = (date: string) => {
+  const parsedDate = new Date(date)
+  return `${formatDate(parsedDate)} ${formatTime(parsedDate)}`
+}
 </script>
 <template>
   <table class="table">
@@ -29,7 +47,9 @@ defineProps<{
           </div>
         </td>
         <td class="table__table-data">{{ story.last_author.friendly_name }}</td>
-        <td class="table__table-data">{{ story.updated_at }}</td>
+        <td class="table__table-data">
+          {{ formattedDate(story.updated_at) }}
+        </td>
       </tr>
     </tbody>
   </table>
