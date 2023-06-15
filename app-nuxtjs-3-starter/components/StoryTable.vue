@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Story } from '~/src/Story'
+import { Story } from '~/shared/types'
 
 defineProps<{
   stories: Story[]
