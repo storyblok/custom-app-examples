@@ -3,9 +3,8 @@ import {
   sessionCookieStore,
 } from '@storyblok/app-extension-auth'
 import { H3Event } from 'h3'
-import { authHandlerParams } from '~/src/auth'
-import { fetchStories } from '~/src/server/fetchStories'
-import { Story } from '~/src/Story'
+import { Story } from '~/shared/types'
+import { fetchStories } from '~/shared/helpers'
 
 export default defineEventHandler<Story[]>(async (event) => {
   const query = getQuery(event)

@@ -1,6 +1,7 @@
 import { AuthHandlerParams } from '@storyblok/app-extension-auth'
-import { endpointPrefix } from '~/src/endpointPrefix'
+import { endpointPrefix } from '~/shared/helpers'
 
+// NOTE: this file is inside server because it reads the environment variables that are only available on server
 const isString = (variable: unknown): variable is string =>
   typeof variable === 'string' && variable.length > 0
 

@@ -1,6 +1,6 @@
 import { Region } from '@storyblok/app-extension-auth'
 import StoryblokClient from 'storyblok-js-client'
-import { isStories, Story } from '~/src/Story'
+import { isStories, Story } from '~/shared/types'
 
 type StoriesResponse = {
   stories: Story[]
