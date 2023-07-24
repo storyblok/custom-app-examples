@@ -1,0 +1,11 @@
+.app {
+  flex: 1;
+}
+
+.app__text {
+  color: #8d919f;
+}
+
+.app__story-table {
+  margin-top: 16px;
+}

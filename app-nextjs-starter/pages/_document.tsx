@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Html, Head, Main, NextScript } from 'next/document'
+import * as React from "react";
+import { Html, Head, Main, NextScript } from "next/document";
 
 const Document = () => (
   <Html lang="en">
@@ -13,9 +13,9 @@ const Document = () => (
       />
     </Head>
     <body>
-    <Main />
-    <NextScript />
+      <Main />
+      <NextScript />
     </body>
   </Html>
-)
-export default Document
+);
+export default Document;
