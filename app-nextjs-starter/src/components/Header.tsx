@@ -1,5 +1,5 @@
-import { StoryblokIcon } from "./StoryblokIcon";
-import styles from "./Header.module.css";
+import { StoryblokIcon } from './StoryblokIcon'
+import styles from './Header.module.css'
 
 export const Header = () => {
   return (
@@ -24,5 +24,5 @@ export const Header = () => {
         </h2>
       </div>
     </header>
-  );
-};
+  )
+}
