@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { useEffect } from "react";
 import { Layout } from "@src/components/Layout";
 import { UnauthorizedIcon } from "@src/components/UnauthorizedIcon";
-import styles from "../src/styles/401.module.css";
+import styles from "@src/styles/401.module.css";
 
 const Page: NextPage = () => {
   useEffect(() => {
