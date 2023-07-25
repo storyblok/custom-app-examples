@@ -10,7 +10,7 @@ onMounted(() => {
   <div class="error">
     <UnauthorizedIcon />
     <h3 class="error__title">Unauthorized</h3>
-    <h4 class="error_subtitle">Failed to authenticate</h4>
+    <h4 class="error__subtitle">Failed to authenticate</h4>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ onMounted(() => {
   line-height: 1.167;
 }
 
-.error_subtitle {
+.error__subtitle {
   margin: 0;
   font-weight: 400;
   letter-spacing: 0.00938em;
