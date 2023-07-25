@@ -16,7 +16,7 @@ const Page: NextPage = () => {
       <article className={styles.error}>
         <UnauthorizedIcon />
         <h3 className={styles.error__title}>Unauthorized</h3>
-        <h4 className={styles.error_subtitle}>Failed to authenticate</h4>
+        <h4 className={styles.error__subtitle}>Failed to authenticate</h4>
       </article>{' '}
     </Layout>
   )
