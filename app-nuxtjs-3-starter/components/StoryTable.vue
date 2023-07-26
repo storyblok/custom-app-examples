@@ -61,13 +61,13 @@ const formattedDate = (date: string) => {
 
 <style scoped>
 .table {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .table__head-cell {
   box-sizing: border-box;
-  padding: 14px 10px;
+  padding: 14px 0;
   color: #8d919f;
   font-weight: 400;
   line-height: 1.3;
@@ -85,7 +85,7 @@ const formattedDate = (date: string) => {
 .table__data-cell {
   color: #8d919f;
   gap: 20px;
-  padding: 14px 10px;
+  padding: 14px 0;
 }
 
 .table__data-cell--name {
@@ -109,4 +109,5 @@ const formattedDate = (date: string) => {
     display: none;
   }
 }
+
 </style>
