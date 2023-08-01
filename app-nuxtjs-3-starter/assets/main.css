@@ -1,19 +1,24 @@
-html{
-    height:100%;
+html {
+  height: 100%;
 }
 
 body {
-    font-size: 0.875rem;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    line-height: 1.6;
-    color: #1b243f;
-    height:100%;
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  color: #1b243f;
+  height: 100%;
 }
 
 body > div {
-    height: 100%;
-    display:flex;
+  height: 100%;
+  display: flex;
+}
+
+a {
+  color: #009f9c;
+  text-decoration: none;
 }
