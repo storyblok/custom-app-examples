@@ -1,0 +1,49 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table__head-cell {
+  box-sizing: border-box;
+  padding: 14px 0;
+  color: #8d919f;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.table__table-row {
+  border-bottom: 1px solid #eff1f3;
+}
+
+.table__table-row:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.table__data-cell {
+  color: #8d919f;
+  gap: 20px;
+  padding: 14px 0;
+}
+
+.table__data-cell--name {
+  display: flex;
+  align-items: center;
+}
+
+.table__data-cell-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__story-name {
+  color: #1b243f;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .table__data-cell--author,
+  .table__head-cell--author {
+    display: none;
+  }
+}

@@ -1,33 +1,10 @@
 .container {
   padding: 45px 80px;
+  width: 100%;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.title {
-  color: #1b243f;
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin: 0px;
-}
-
-.subTitle {
-  margin: 8px 0;
-  color: #8d919f;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-.main {
-  padding-top: 45px;
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 110px 5px 0 5px;
+  }
 }

@@ -1,4 +1,4 @@
-import {AuthHandlerParams} from '@storyblok/app-extension-auth'
+import { AuthHandlerParams } from '@storyblok/app-extension-auth'
 
 export const endpointPrefix = '/api/authenticate'
 
