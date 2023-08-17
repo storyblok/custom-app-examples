@@ -1,6 +1,6 @@
 import { AuthHandlerParams } from '@storyblok/app-extension-auth'
 
-export const endpointPrefix = '/api/authenticate'
+export const endpointPrefix = '/api/authenticate/storyblok'
 
 export const authHandlerParams: AuthHandlerParams = {
   clientId: process.env.CLIENT_ID,

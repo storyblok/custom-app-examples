@@ -8,7 +8,7 @@ export const Header = () => {
         <StoryblokIcon />
       </div>
       <div className={styles.header__titles}>
-        <h1 className={styles.header__title}>Next Custom Application</h1>
+        <h1 className={styles.header__title}>Next.js Plugin</h1>
         <h2 className={styles.header__subtitle}>
           Created with
           <code>
