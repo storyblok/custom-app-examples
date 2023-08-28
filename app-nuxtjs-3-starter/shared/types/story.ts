@@ -23,8 +23,7 @@ export const isStory = (data: unknown): data is Story =>
   'slug' in data &&
   typeof data.slug === 'string' &&
   'updated_at' in data &&
-  typeof data.updated_at === 'string' &&
-  'last_author' in data
+  typeof data.updated_at === 'string'
 
 export const isStories = (data: unknown): data is Story[] =>
   Array.isArray(data) && data.every(isStory)
