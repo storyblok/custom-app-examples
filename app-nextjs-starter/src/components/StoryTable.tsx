@@ -61,7 +61,7 @@ export const StoryTable: FunctionComponent<{
               <td
                 className={`${styles['table__data-cell']} ${styles['table__data-cell--author']}`}
               >
-                {story.last_author.friendly_name}
+                {story.last_author?.friendly_name || '-'}
               </td>
               <td className={styles['table__data-cell']}>
                 {formattedDate(story.updated_at)}

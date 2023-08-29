@@ -42,14 +42,13 @@ const formattedDate = (date: string) => {
         <td class="table__data-cell table__data-cell--name">
           <FolderIcon v-if="story.is_folder" />
           <StoryIcon v-else />
-
           <div class="table__data-cell-name">
             <strong class="table__story-name">{{ story.name }}</strong>
             <span>{{ story.slug }}</span>
           </div>
         </td>
         <td class="table__data-cell table__data-cell--author">
-          {{ story.last_author.friendly_name }}
+          {{ story.last_author?.friendly_name || '-' }}
         </td>
         <td class="table__data-cell">
           {{ formattedDate(story.updated_at) }}
@@ -109,5 +108,4 @@ const formattedDate = (date: string) => {
     display: none;
   }
 }
-
 </style>
