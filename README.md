@@ -12,22 +12,10 @@ A collection of custom apps for Storyblok created by the community. Read more ab
 <details>
 <summary>Table of Content</summary>
 
-- [Examples](#examples)
 - [Example Repositories](#example-repositories)
 - [Contributing](#contributing)
 
 </details>
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-## Examples
-
-Each example contains a `README.md` with an explanation about the custom app.
-
-<!-- AUTO-GENERATED-CONTENT:START (EXAMPLE_TABLE)  -->
-| Example  | Author |
-|:-------|:------:|
-| **[Seo Data App ](https://github.com/storyblok/custom-app-examples/tree/main/seo-data-app)** <br/>  A simple app to edit SEO fields  |  [Zach Edwards](https://github.com/edwardz8) |
-
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Example Repositories
