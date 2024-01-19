@@ -1,14 +1,9 @@
 <script setup>
-import { navigateTo, useFetch, useRoute } from '#app'
+import { useFetch, useRoute } from '#app'
 import StoryTable from '~/components/StoryTable.vue'
-import { initOauthFlowUrl } from '~/shared/helpers'
 
 const route = useRoute()
 const { spaceId, userId } = route.query
-
-if (!spaceId || !userId) {
-  navigateTo(initOauthFlowUrl)
-}
 
 const result = await useFetch(() => `/api/stories`, {
   params: {

@@ -37,7 +37,7 @@ For creating a new custom application you can either follow [this article](https
 4. Navigate to the _OAuth 2.0 and Pages tab_.
 5. Set up Production/Preview mode.
     1. `Index to your page` should point to your ngrok URL (e.g.: `https://myngroksubdomain.ngrok.io`).
-    2. `Redirection endpoint` points to the callback endpoint (e.g.: `https://myngroksubdomain.ngrok.io/api/authenticate/callback`).
+    2. `Redirection endpoint` points to the callback endpoint (e.g.: `https://myngroksubdomain.ngrok.io/api/connect/callback`).
 6. Retrieve Client ID and Client Secret and set them inside the `.env` file as `CLIENT_ID` and `CLIENT_SECRET`.
 
 ### Run

@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app-base",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "check:types": "tsc --noEmit",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@storyblok/app-extension-auth": "1.0.0-alpha.1",
+    "prettier": "^2.8.8",
+    "storyblok-js-client": "^5.10.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^18",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.8.0",
+    "typescript": "^5.1.3"
+  },
+  "packageManager": "yarn@3.2.4"
+}
