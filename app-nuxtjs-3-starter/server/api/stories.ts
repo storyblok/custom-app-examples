@@ -1,9 +1,9 @@
 import {
   isAppSessionQuery,
-  sessionCookieStore,
+  getSessionStore,
 } from '@storyblok/app-extension-auth'
 import { H3Event } from 'h3'
-import { Story } from '~/shared/types'
+import type { Story } from '~/shared/types'
 import { fetchStories } from '~/shared/helpers'
 
 export default defineEventHandler<Story[]>(async (event) => {
@@ -15,9 +15,7 @@ export default defineEventHandler<Story[]>(async (event) => {
     })
   }
 
-  const sessionStore = sessionCookieStore(authHandlerParams)(
-    requestParams(event),
-  )
+  const sessionStore = getSessionStore(authHandlerParams)(requestParams(event))
   const appSession = await sessionStore.get(query)
   if (!appSession) {
     throw createError({
