@@ -4,7 +4,7 @@ import StoryTable from '~/components/StoryTable.vue'
 import { initOauthFlowUrl } from '~/shared/helpers'
 
 const route = useRoute()
-const { spaceId, userId } = route.query
+const { space_id: spaceId, user_id: userId } = route.query
 
 if (!spaceId || !userId) {
   navigateTo(initOauthFlowUrl)
