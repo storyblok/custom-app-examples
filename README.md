@@ -1,3 +1,19 @@
+> **⚠️ DEPRECATION NOTICE ⚠️**
+>
+> This template repository (`custom-app-examples`) is **deprecated** and no longer actively maintained or recommended.
+>
+> Please refer to the new central repository, **`storyblok/space-tool-plugins`**, for examples, boilerplates, and the standard approach to developing Space Plugins (or Tool Plugins) for Storyblok. This new location provides updated resources and represents the standard going forward.
+>
+> *   **➡️ New Space Plugin projects should use the resources found in `storyblok/space-tool-plugins`.**
+> *   **➡️ Existing projects based on this template should refer to `storyblok/space-tool-plugins` for updates and best practices.**
+>
+> Find the new resources here:
+> *   **GitHub:** [https://github.com/storyblok/space-tool-plugins](https://github.com/storyblok/space-tool-plugins)
+> *   **Tool plugins documentation:** [https://www.storyblok.com/docs/plugins/tool-plugins](https://www.storyblok.com/docs/plugins/tool-plugins/)
+> *   **Space plugins documentation:** [https://www.storyblok.com/docs/plugins/space-plugins](https://www.storyblok.com/docs/plugins/space-plugins/)
+> *   
+>
+> Thank you for your understanding.
 
 <img src="https://a.storyblok.com/f/51376/x/19b4879a86/logo.svg" width="200" alt="Storyblok Logo">
 
